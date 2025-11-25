@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Not Available</title>
+    <style>
+        body {
+            background-color: #FF00FF;
+            color: #00FF00;
+            font-family: Comic Sans MS, cursive;
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+            line-height: 1.4;
+            perspective: 1200px;
+        }
+        p {
+            background-color: #FFFF00;
+            color: #FF0000;
+            padding: 20px;
+            border: 12px solid #0000FF;
+            text-shadow: 3px 3px 0px #000000;
+            transform: rotate(-2deg);
+            box-shadow: 10px 10px 0px #00FFFF;
+        }
+        .blink {
+            animation: blink 0.5s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        .face {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 10px;
+            background: #FFFF00;
+            border: 8px dotted #0000FF;
+            transform: rotate(3deg);
+            box-shadow: -10px -10px 0px #FF0000;
+        }
+        .face img {
+            width: 180px;
+            height: auto;
+            display: block;
+        }
+        .attachment {
+            margin-top: 30px;
+            display: inline-block;
+        }
+        .attachment img {
+            max-width: 320px;
+            height: auto;
+            display: inline-block;
+            animation: kissZoom 3s infinite ease-in-out;
+            transform-origin: center bottom;
+            border-radius: 35px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+        }
+        @keyframes kissZoom {
+            0% {
+                transform: rotateX(0deg) scale(0.85) translateZ(0px);
+            }
+            30% {
+                transform: rotateX(8deg) scale(1) translateZ(60px);
+            }
+            55% {
+                transform: rotateX(-6deg) scale(1.35) translateZ(120px);
+            }
+            70% {
+                transform: rotateX(0deg) scale(1.45) translateZ(150px);
+            }
+            100% {
+                transform: rotateX(0deg) scale(0.85) translateZ(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Sorry that this website does not exist.
+        <span class="blink">Brett Hardy won't pay for the domain name</span>
+        and I (Scott Hardy) own the domain so this is what the website is now.
+        Sorry, come back soon.
+    </p>
+
+    <div class="face">
+        <img src="brett-face.png" alt="Brett making a face">
+    </div>
+
+    <div class="attachment">
+        <img src="Attached_image.png" alt="Attached image">
+    </div>
+</body>
+</html>
